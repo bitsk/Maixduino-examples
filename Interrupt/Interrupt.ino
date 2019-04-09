@@ -7,7 +7,7 @@ void setup()
   pinMode(SensorLED, OUTPUT);         //LED为输出模式
   pinMode(SensorINPUT, INPUT_PULLUP);      //震动开关为输入模式
   //下降沿触发，触发中断0，调用blink函数
-attachInterrupt(SensorINPUT, blink, FALLING);
+  attachInterrupt(SensorINPUT, blink, FALLING);
 }
 void loop() {
   if (state == HIGH) {        // 如果state为HIGH
